@@ -21,7 +21,20 @@ class ProductsController < ApplicationController
   end
   
   
-  
+  def who_bought
+    
+    @product = Product.find(params[:id])
+    
+    respond_to do |format|
+      format.html
+      format.xml
+      
+      format.atom
+      format.json { render json: @product.to_json(include: :orders) }
+      
+    end
+    
+  end
   # GET /products/1
   
   # GET /products/1.json
