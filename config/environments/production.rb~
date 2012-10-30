@@ -64,7 +64,7 @@ Depot::Application.configure do
   
   config.logger = Logger.new(paths['log'].first, 2, 10.kilobytes)
                                    
-
+                                   end
 
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
