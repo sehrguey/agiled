@@ -6,7 +6,11 @@ gem 'rails', '3.2.8'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+group :production do
 
+  gem 'mysql2'
+
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -32,7 +36,7 @@ gem 'will_paginate', '~> 3.0'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
