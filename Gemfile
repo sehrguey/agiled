@@ -38,5 +38,6 @@ gem 'will_paginate', '~> 3.0'
 # Deploy with Capistrano
  gem 'capistrano'
 gem 'ps'
+gem 'pg'
 # To use debugger
 # gem 'debugger'
